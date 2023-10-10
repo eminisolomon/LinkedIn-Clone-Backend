@@ -2,3 +2,5 @@ fastapi
 bson
 pydantic
 redis
+sse_starlette
+uvicorn

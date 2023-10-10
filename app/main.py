@@ -5,7 +5,7 @@ from fastapi.responses import JSONResponse, RedirectResponse
 from fastapi.middleware.cors import CORSMiddleware
 from sse_starlette.sse import EventSourceResponse
 
-from app.controllers.main_router import router as main_router
+from app.controllers.main import router as main_router
 from app.schemas.error import ValidationError
 
 from app.core.config import settings
