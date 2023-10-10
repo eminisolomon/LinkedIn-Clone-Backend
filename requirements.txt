@@ -1,0 +1,4 @@
+fastapi
+bson
+pydantic
+redis
