@@ -10,16 +10,14 @@ collection = database.test
 
 async def insert():
     res = await collection.insert_one({"id": 2})
-    print(res)
+    print(res.inserted_id)
 
 
 async def read():
-    # print(dir(collection))
-    collection.find():
-        print(do)
-    print(dir(collection.find()))
-    # print(res)
-    # res = await collection
+    async for document in collection.find({}):
+        print(document)
 
 
-# asyncio.run(read())
+# Run the asynchronous functions using asyncio
+asyncio.run(insert())
+asyncio.run(read())
