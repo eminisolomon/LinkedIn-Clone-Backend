@@ -1,28 +1,23 @@
-#LinkedIn-Clone-Backend
-=========
+# LinkedIn-Clone-Backend
 
-Installation
-------------
+## Installation
 
-After cloning, create a virtual environment and install the requirements. For Linux and Mac users:
+After cloning, make sure you have Poetry installed. If not, you can install it following the instructions [here](https://python-poetry.org/docs/).
 
-    $ python3 -m venv venv
-    $ source venv/bin/activate
-    (venv) $ pip install -r requirements.txt
+Create a virtual environment and install the project dependencies:
 
-If you are on Windows, then use the following commands instead:
+```bash
+$ poetry install
+```
 
-    $ python3 -m venv venv
-    $ venv\Scripts\activate
-    (venv) $ pip install -r requirements.txt
+1. Activate the Virtual Environment
 
-Running
--------
+```bash
+$ poetry shell
+```
 
-To run the server use the following command:
+2. Running
 
-    (venv) $ python api.py
-     * Running on http://127.0.0.1:5000/
-     * Restarting with reloader
-
-Then from a different terminal window you can send requests.
+```bash
+$ sh start.sh
+```
